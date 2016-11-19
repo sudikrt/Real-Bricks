@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Name Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Property Name"
+            android:textSize="17dip" />
+
+        <!-- Input Name -->
+
+        <EditText
+            android:id="@+id/name_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true" />
+
+        <!-- Location Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Location"
+            android:textSize="17dip" />
+
+        <!-- Input Location -->
+
+        <EditText
+            android:id="@+id/location_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:lines="2" />
+
+        <!-- Name City -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="City"
+            android:textSize="17dip" />
+
+        <!-- Input City -->
+
+        <EditText
+            android:id="@+id/city_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true" />
+
+        <!-- Price Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Price(UGX)"
+            android:textSize="17dip" />
+
+        <!-- Input Price -->
+
+        <EditText
+            android:id="@+id/price_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+        <!-- Description Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Description"
+            android:textSize="17dip" />
+
+        <!-- Input description -->
+
+        <EditText
+            android:id="@+id/desc_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="top"
+            android:lines="3" />
+
+        <!-- Button Create Product -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Contact Info"
+            android:textSize="17dip" />
+
+        <!-- Input description -->
+
+        <EditText
+            android:id="@+id/cont_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="top"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Status"
+            android:textSize="17dip" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="For-sale"
+                    android:checked="true"
+                    android:id="@+id/for_sale_update"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sold"
+                    android:id="@+id/sold_update"/>
+            </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnNew_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <!-- Button Cancel -->
+
+        <Button
+            android:id="@+id/btnKanso_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</ScrollView>

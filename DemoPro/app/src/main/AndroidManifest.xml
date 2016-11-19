@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.geeky.demopro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Screen_Activity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"/>
+        <activity android:name=".RegActivity"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NewPropertyActivity"
+            android:label="Add New Property"
+            android:parentActivityName=".Screen_Activity"/>
+        <activity android:name=".MessageActivity"
+            android:label="Contact Us"
+            android:parentActivityName=".Screen_Activity"/>
+        <activity android:name=".ViewProperty"
+            android:label="All Property"
+            android:parentActivityName=".Screen_Activity"/>
+        <activity android:name=".Profile"
+            android:label="Profile"
+            android:parentActivityName=".Screen_Activity"/>
+        <activity android:name=".ChangeStatus"
+            android:label="Update Property"
+            android:parentActivityName=".Screen_Activity"/>
+        <activity android:name=".UpdateDAta"
+            android:label="Update Property"></activity>
+    </application>
+
+</manifest>

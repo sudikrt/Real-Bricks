@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoPro</string>
+    <string name="title_activity_new_property">NewPropertyActivity</string>
+</resources>
